@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts"
+    "start": "NODE_OPTIONS='--no-deprecation' ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,8 @@
   "description": "",
   "dependencies": {
     "@types/node": "^22.13.14",
+    "axios": "^1.8.4",
+    "chalk": "^5.4.1",
     "dotenv": "^16.4.7",
     "ethers": "^6.13.5",
     "openai": "^4.90.0",
